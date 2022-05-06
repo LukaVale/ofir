@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Moja stranica</title>
+</head>
+<body >
+    <nav class="navbar navbar-expand-md fixed-top justify-content-center p-3">
+        <div class="container-xxl">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="main-nav" class="collapse navbar-collapse justify-content-center align-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="naslovna.html" class="nav-link">NASLOVNA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mojgrad.html" class="nav-link">MOJ GRAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="omeni.html" class="nav-link">O MENI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="galerija.html" class="nav-link">GALERIJA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kontakt.html" class="nav-link">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="w-100 h-100 p-3 d-flex justify-content-center align-items-center">
+        <h1>
+            KONTAKT
+        </h1>
+    </div>
+
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in touch</h2>
+                <p class="lead">Questions to ask? Fill out the form</p>
+            </div>
+            <div class="row justify-content-center my-5 ">
+                <div class="col-lg-6 col-md-4">
+                    <form >
+                        <label for="email" class="form-label">Email adress:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                  </svg>
+                            </span>
+                            <input type="email" class="form-control" id="email" placeholder="e.g mario@example.com">
+                        </div>
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                  </svg>
+                            </span>
+                            <input type="text" class="form-control" id="name" placeholder="e.g Mario">
+                        </div>
+                        
+                        
+
+                        <label for="subject" class="form-label">What is your question about</label>
+                        <select class="form-select" id="subject">
+                            <option value="pricing" selected> Pricing query</option>
+                            <option value="content" > Pricing </option>
+                            <option value="other" >  query</option>
+                        </select>
+                        
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea class="form-control" id="query" style="height: 140px;"></textarea>
+                            <label for="query" >Your query..</label>
+                        </div>
+                        
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
