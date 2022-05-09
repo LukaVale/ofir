@@ -1,25 +1,22 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Moja stranica</title>
+  <title>Moja stranica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body >
-    <nav class="navbar navbar-expand-md fixed-top justify-content-center p-3">
+<body>
+  
+    <nav class="navbar navbar-expand-md fixed-top justify-content-center p-3 navbar-dark">
         <div class="container-xxl">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div id="main-nav" class="collapse navbar-collapse justify-content-center align-center">
+            <div id="main-nav" class="collapse navbar-collapse justify-content-center align-center"> 
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="naslovna.html" class="nav-link">NASLOVNA</a>
-                    </li>
                     <li class="nav-item">
                         <a href="mojgrad.html" class="nav-link">MOJ GRAD</a>
                     </li>
@@ -36,12 +33,66 @@
             </div>
         </div>
     </nav>
-    <div class="w-100 h-100 p-3 d-flex justify-content-center align-items-center">
-        <h1>
-           GALERIJA
-        </h1>
+  <section class="gallery min-vh-100">
+     <div class="container-lg">
+        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-4">
+           <div class="col">
+              <img src="slika.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="slika2.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="slika3.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="slika4.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="slika5.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+              <img src="slika6.jpg" class="gallery-item" alt="gallery">
+           </div>
+           <div class="col">
+            <img src="slika7.jpg" class="gallery-item" alt="gallery">
+         </div>
+         <div class="col">
+            <img src="slika8.jpg" class="gallery-item" alt="gallery">
+         </div>
+         <div class="col">
+            <img src="slika9.jpg" class="gallery-item" alt="gallery">
+         </div>
+         <div class="col">
+            <img src="slika.jpg" class="gallery-item" alt="gallery">
+         </div>
+        </div>
+     </div>
+  </section>
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <img src="img/1.jpg" class="modal-img" alt="modal img">
+      </div>
     </div>
-    <div class="modal-dialog modal-xl">XL Modal</div>
-    
+  </div>
+</div>
+<footer class="mt-auto py-3 w-100 fixed-bottom  ">
+   <p class="text-center">MOJA STRANICA. All Rights Reserved &copy; <span id="date"> </span> </p>
+</footer>
+<script>
+   date = new Date();
+   year = date.getFullYear();
+   month = date.getMonth() + 1;
+   day = date.getDate();
+   document.getElementById("date").innerHTML = day+"." + month+"." + year+".";
+   </script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
