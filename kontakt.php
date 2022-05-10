@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,43 +10,15 @@
     <title>Moja stranica</title>
 </head>
 <body >
-    <nav class="navbar navbar-expand-md fixed-top justify-content-end navbar-dark" style="padding-top: 20px;">
-        <div class="container-xxl ">
-            
-            <button class="navbar-toggler justify-content-end " type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation " id="as-navbar-toggler" >
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-
-            <div id="main-nav" class="collapse navbar-collapse align-center justify-content-center dropdown-menu-end">
-                <ul class="navbar-nav dropdown-menu-end">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">NASLOVNA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="mojgrad.html" class="nav-link">MOJ GRAD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="omeni.html" class="nav-link">O MENI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="galerija.html" class="nav-link">GALERIJA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="kontakt.html" class="nav-link">KONTAKT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id="contact" >
-        <div class="container-lg p-5">
+<?php include('nav.php') ?>
+    <section >
+        <div class="container-lg p-5 mt-5">
             <div class="text-center">
-                <h2>Javite se</h2>
                 <p class="lead">Ukoliko imate dodatnih pitanja, ispunite formu</p>
             </div>
             <div class="row justify-content-center my-5 ">
                 <div class="col-lg-6 col-md-4">
-                    <form >
+                    <form action="kontakt.php" method="GET">
                         <label for="email" class="form-label">Email adresa:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text" >
@@ -53,7 +26,7 @@
                                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                                   </svg>
                             </span>
-                            <input type="email" class="form-control" id="mail" placeholder="luka@gmail.com">
+                            <input type="email" class="form-control" name="email" placeholder="luka@gmail.com">
                         </div>
                         <label for="name" class="form-label">Ime:</label>
                         <div class="mb-4 input-group">
@@ -62,13 +35,13 @@
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                                   </svg>
                             </span>
-                            <input type="text" class="form-control" id="name" placeholder="Mario">
+                            <input type="text" class="form-control" name="ime" placeholder="Mario">
                         </div>
                         
                         
 
                         <label for="subject" class="form-label">O čemu je vaše pitanje?</label>
-                        <select class="form-select" id="subject">
+                        <select class="form-select" id="subject" name="subject">
                             <option value="pricing" selected> O mojem gradu</option>
                             <option value="content" > O meni </option>
                             <option value="other" >  O galeriji fotografija</option>
@@ -88,15 +61,8 @@
             </div>
         </div>
     </section>
-    <footer class="mt-auto py-3 w-100 fixed-bottom ">
-        <p class="text-center">MOJA STRANICA. All Rights Reserved &copy; <span id="date"> </span> </p>
+    <footer class="section sticky-bottom">
+    <?php include('footer.php') ?>
     </footer>
-    <script>
-        date = new Date();
-        year = date.getFullYear();
-        month = date.getMonth() + 1;
-        day = date.getDate();
-        document.getElementById("date").innerHTML = day+"." + month+"." + year+".";
-        </script>
 </body>
 </html>
