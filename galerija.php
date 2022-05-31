@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Moja stranica</title>
+  <title>Galerija</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -61,6 +61,9 @@
 <footer class="section sticky-bottom">
     <?php include('footer.php') ?>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
