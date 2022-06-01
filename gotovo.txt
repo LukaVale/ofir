@@ -1,0 +1,21 @@
+naslovna font
+
+naslovna dizajn
+
+css odvojit u folder
+
+navigacija u istom tabu
+
+modal staviti escape u sliku, odnosno slika preko cijelog modala
+
+linkovi maknuti hover
+
+slike centrirati na mobilnoj
+
+home page maknuti naslovnu 
+
+responzivni dizajn.!
+
+kontakt forma font forme, 
+
+placeholder na vaš upit

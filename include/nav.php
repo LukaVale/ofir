@@ -49,11 +49,6 @@
           const element = document.getElementById("index");
           element.remove(); 
         }
-//         var c=document.getElementById('myCanvas');
-//         var ctx=c.getContext('2d');
-//       ctx.font='30px Arial';
-//     var m=ctx.measureText('It is a great day!');
-// ctx.fillText(m.width,10,30);
     });
 
 </script>
