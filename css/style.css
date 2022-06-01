@@ -1,0 +1,152 @@
+body {
+    letter-spacing: 3px;
+    font-family: adam-cg;
+    background-color: #346272;
+    color: #e1e2df;
+    font-size: 1rem;
+}
+
+footer {
+    font-size: 0.6rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+        padding: 0 0.5em;
+    }
+    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+        border-right: 2px solid #e1e2df;
+    }
+}
+
+@font-face {
+    font-family: 'adam-cg';
+    src: url('LemonMilkLight.otf');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #e1e2df;
+}
+
+a:hover li {
+    color: #e1e2df;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #e1e2df;
+    text-decoration: underline;
+}
+
+.img-responsive {
+    border-radius: 35%;
+    cursor: pointer;
+    transition: 1s;
+    width: 100%;
+    max-height: 350px;
+}
+
+.gallery {
+    padding: 80px 0;
+}
+
+.gallery img {
+    width: 90%;
+    padding: 15px;
+    box-shadow: 0 0 15px #547a87;
+    cursor: pointer;
+}
+
+#gallery-modal .modal-img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    opacity: 100;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    color: #e1e2df;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+nav li>a {
+    color: #e1e2df;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.linija {
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-toggler {
+    background-color: #e1e2df;
+}
+
+.nav-link {
+    color: #e1e2df;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+    footer {
+        padding-top: 2em;
+    }
+    nav li>a:hover::after,
+    nav li>a.active-nav::after {
+        width: 20%;
+        background: #e1e2df;
+        color: #e1e2df;
+    }
+}
+
+.index {
+    letter-spacing: 15px;
+    font-family: adam-cg;
+}
+
+.active-nav span {
+    position: relative;
+}
+
+.active-nav span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #e1e2df;
+}
+
+.form-control::placeholder {
+    font-family: sans-serif;
+}
+
+.form-control::-ms-input-placeholder {
+    font-family: sans-serif;
+}

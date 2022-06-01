@@ -1,0 +1,26 @@
+font
+naslovna dizajn
+
+home page maknuti naslovnu 
+
+navigacija u istom tabu
+
+modal dodati listanje unutar modala
+
+kontakt forma font forme, placeholder na vaš upit
+
+
+mobilna oznaka na kojoj si stranici dužine teksta 
+
+
+footer ispod teksta
+
+
+responzivni dizajn.!
+
+navigacija mobilna prekriti sadržaj
+
+slike centrirati na mobilnoj
+
+odnosno slika preko cijelog modala
+

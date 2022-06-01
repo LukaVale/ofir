@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Moj grad</title>
 </head>
 
 <body>
-<?php include('nav.php') ?>
+<?php include('include/nav.php') ?>
 <section>
     <div class="container-lg min-vh-100 row mx-auto  ">
         <div class="row"></div>
@@ -87,10 +87,10 @@
                         <center>
                             <hr style="text-align: center; width: 30%; margin-top: 0.5em; margin-bottom: 0.5em;">
                         </center>
-                        <li><a target="_blank" href="http://www.sporthouse.hr/en/#pocetna">SportHouse Osijek</a></li>
-                        <li><a target="_blank" href="https://karaka.co/">Restoran Karaka</a></li>
-                        <li><a target="_blank" href="http://slavonska-kuca.com/">Slavonska Kuća</a></li>
-                        <li><a target="_blank" href="http://www.rustika.hr/">Rustika</a></li>
+                        <a target="_blank" href="http://www.sporthouse.hr/en/#pocetna"><li>SportHouse Osijek</li></a>
+                        <a target="_blank" href="https://karaka.co/"><li>Restoran Karaka</li></a>
+                        <a target="_blank" href="http://slavonska-kuca.com/"><li>Slavonska Kuća</li></a>
+                        <a target="_blank" href="http://www.rustika.hr/"><li>Rustika</li></a>
                     </ul>
                 </div>
             </div>
@@ -141,8 +141,8 @@
         
     </div>
     </section>
-    <footer class="sticky-bottom">
-    <?php include('footer.php') ?>
+    <footer class="section botom-fixed">
+    <?php include('include/footer.php') ?>
     </footer>
 </body>
 
