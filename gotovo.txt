@@ -19,3 +19,12 @@ responzivni dizajn.!
 kontakt forma font forme, 
 
 placeholder na vaš upit
+
+o meni - slika desno za tablet, a za mob slika iznad teksta
+
+grad stranica u mobitelu 
+
+promjeniti redosljed - muzej - hotel - klub 
+    
+na tabletu - hoteli - klub - muzej
+

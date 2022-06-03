@@ -14,9 +14,8 @@
 <?php include('include/nav.php') ?>
 <section>
     <div class="container-lg min-vh-100 row mx-auto  ">
-        <div class="row"></div>
         
-        <div class="row col-12 justify-content-center align-items-center">
+        <div class="row col-12 justify-content-center align-items-center box">
             <div class="col-md-4 col-12 my-md-0">
 
                 <ul style="text-align: center;
@@ -137,11 +136,10 @@
                     </a>
                 </ul>
             </div>
-        </div><div class="row"></div>
         
     </div>
     </section>
-    <footer class="section botom-fixed">
+    <footer >
     <?php include('include/footer.php') ?>
     </footer>
 </body>
