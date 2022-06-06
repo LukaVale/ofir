@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>Kontakt</title>
 </head>
 <body >
@@ -18,7 +19,7 @@
             </div>
             <div class="row justify-content-center my-5 ">
                 <div class="col-lg-6 col-md-4">
-                    <form action="kontakt.php" method="GET">
+                    <form action="contact.php" method="post">
                         <label for="email" class="form-label">Email adresa:</label>
                         <div class="mb-4 input-group">
                             <span class="input-group-text" >
@@ -29,6 +30,7 @@
                             <input type="email" class="form-control" name="email" placeholder="mail@email.com">
                         </div>
                         <label for="name" class="form-label">Ime:</label>
+                        
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -45,7 +47,7 @@
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
                         </svg>
                             </span>
-                            <input type="text" class="form-control" name="ime" placeholder="Naslovna">
+                            <input type="text" class="form-control" name="pitanje" placeholder="Naslovna">
                         </div>
 
 
@@ -56,10 +58,10 @@
                         <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
                         </svg>
                             </span>
-                            <textarea class="form-control" id="query" style="height: 140px;" placeholder="Vaš upit.... "></textarea>
+                            <textarea class="form-control" id="query" name="query" style="height: 140px;" placeholder="Vaš upit.... "></textarea>
                         </div>
                             <div class="mb-4 text-center">
-                            <button type="submit" class="btn btn-secondary">Pošalji</button>
+                            <button type="submit" name="submit" class="btn btn-secondary">Pošalji</button>
                         </div>
                         
                     </form>
@@ -71,5 +73,9 @@
     <?php include('include/footer.php') ?>
     </footer>
     <script src="js/main1.js"></script>
+
+    <?php 
+    
+    ?>
 </body>
 </html>

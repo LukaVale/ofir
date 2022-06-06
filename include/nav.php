@@ -1,6 +1,6 @@
 
-<nav class="navbar navbar-expand-lg navbar-light justify-content-center mt-4">
-      <div class="container ">
+<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+      <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
@@ -17,19 +17,19 @@
           
           <ul class="navbar-nav ">
             <li class="nav-item" id="index">
-              <a class="nav-link " style="color: #e1e2df; " href="index.php"  ><span> NASLOVNA </span></a>
+              <a class="nav-link " href="index.php"  ><span> NASLOVNA </span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " style="color: #e1e2df;" href="mojgrad.php"><span> MOJ GRAD </span></a>
+              <a class="nav-link "href="mojgrad.php"><span> MOJ GRAD </span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " style="color: #e1e2df;" href="omeni.php"><span>O MENI</span></a>
+              <a class="nav-link " href="omeni.php"><span>O MENI</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " style="color: #e1e2df;" href="galerija.php"> <span> GALERIJA </span></a>
+              <a class="nav-link "href="galerija.php"> <span> GALERIJA </span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " style="color: #e1e2df;" href="kontakt.php"><span>KONTAKT</span></a>
+              <a class="nav-link "href="kontakt.php"><span>KONTAKT</span></a>
             </li>
           </ul>
         </div>

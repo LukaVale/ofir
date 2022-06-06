@@ -21,3 +21,4 @@
         day = date.getDate();
         document.getElementById("date").innerHTML = day+"." + month+"." + year+".";
 </script>
+

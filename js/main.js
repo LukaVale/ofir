@@ -14,3 +14,9 @@ $(window).resize(function() {
         $('h1').addClass('display-3').removeClass('display-6');
     }
 });
+
+$(function() {
+    if (window.location.pathname == "/ofir/ofir/index.php") {
+        $
+    }
+});

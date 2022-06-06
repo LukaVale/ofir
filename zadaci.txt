@@ -3,13 +3,3 @@ modal dodati listanje unutar modala //
 footer ispod teksta
 
 aktivacija forme
-
-navigacija mobilna prekriti sadržaj širine ekrana
-
-2 slike na naslovnoj, logo emsa i logo ofir 
-
-emsa gore lijevo, ofir dole desno
-na oba mobitelu na sredini
-na tabletu zamijeniti ih
-
-staviti kao bg image ne kao obican 
