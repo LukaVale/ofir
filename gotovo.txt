@@ -45,3 +45,12 @@ na oba mobitelu na sredini
 na tabletu zamijeniti ih
 
 staviti kao bg image ne kao obican 
+
+-------------------------------------------------------------
+7.6.
+
+aktivacija forme
+
+modal dodati listanje unutar modala // 
+
+footer ispod teksta

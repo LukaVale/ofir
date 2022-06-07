@@ -1,5 +1,3 @@
-modal dodati listanje unutar modala // 
 
-footer ispod teksta
 
-aktivacija forme
+sidebar na jednoj stranici
